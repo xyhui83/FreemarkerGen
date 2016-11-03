@@ -1,0 +1,2 @@
+# FreemarkerGen
+Freemaker代码生成器，可以自动解析Json文件中的数据表结构，生成MyBatis的Mapper、DAO、Service层Java代码
