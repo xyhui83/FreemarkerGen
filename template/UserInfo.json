@@ -1,0 +1,163 @@
+﻿{
+  "IsInsert": true,
+  "IsUpdate": true,
+  "IsQueryAll": true,
+  "IsPager": true,
+  "Keys": [ ],
+  "Table": {
+    "Name": "TB_USER",
+    "Type": "Table",
+    "Fields": [
+      {
+        "Type": "Field",
+        "Name": "ID",
+        "ToName": "Id",
+        "OrgType": "Decimal",
+        "ToType": "Double",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "COMPANY_ID",
+        "ToName": "CompanyId",
+        "OrgType": "Decimal",
+        "ToType": "Double",
+        "IsReadOnly": false,
+        "IsGenPropty": true,
+        "Desc": "",
+        "leftjoin": {
+          "Type": "Join",
+          "JoinField": "pStrFieldName",
+          "Table": {
+            "Name": "TB_USER_COMPANY",
+            "Type": "Table",
+            "Fields": [
+              {
+                "Type": "Field",
+                "Name": "NAME",
+                "ToName": "Name",
+                "OrgType": "String",
+                "ToType": "String",
+                "IsReadOnly": true,
+                "IsGenPropty": false,
+                "Desc": ""
+              },
+              {
+                "Type": "Field",
+                "Name": "ID",
+                "ToName": "Id",
+                "OrgType": "Decimal",
+                "ToType": "Double",
+                "IsReadOnly": true,
+                "IsGenPropty": false,
+                "Desc": ""
+              }
+            ]
+          }
+        }
+      },
+      {
+        "Type": "Field",
+        "Name": "NAME",
+        "ToName": "Name",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "MOBILE",
+        "ToName": "Mobile",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "EMAIL",
+        "ToName": "Email",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "WX_OPEN_ID",
+        "ToName": "WxOpenId",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "CREATE_ID",
+        "ToName": "CreateId",
+        "OrgType": "Decimal",
+        "ToType": "Double",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "CREATE_TIME",
+        "ToName": "CreateTime",
+        "OrgType": "DateTime",
+        "ToType": "DateTime",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "UPDATE_ID",
+        "ToName": "UpdateId",
+        "OrgType": "Decimal",
+        "ToType": "Double",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "UPDTE_TIME",
+        "ToName": "UpdteTime",
+        "OrgType": "DateTime",
+        "ToType": "DateTime",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "WX_HEAD_IMG_URL",
+        "ToName": "WxHeadImgUrl",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      },
+      {
+        "Type": "Field",
+        "Name": "DEPT_NAME",
+        "ToName": "DeptName",
+        "OrgType": "String",
+        "ToType": "String",
+        "IsReadOnly": false,
+        "IsGenPropty": false,
+        "Desc": ""
+      }
+    ]
+  }
+}
